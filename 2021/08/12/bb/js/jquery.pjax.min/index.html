@@ -1,226 +1,310 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="&#x2F;**  * Minified by jsDelivr using UglifyJS v3.4.1.  * Original file: &#x2F;npm&#x2F;jquery-pjax@2.0.1&#x2F;jquery.pjax.js  *   * Do NOT use SRI with dynamically generated files! More information: https:&#x2F;&#x2F;www.jsdeliv">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2021/08/12/bb/js/jquery.pjax.min/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="&#x2F;**  * Minified by jsDelivr using UglifyJS v3.4.1.  * Original file: &#x2F;npm&#x2F;jquery-pjax@2.0.1&#x2F;jquery.pjax.js  *   * Do NOT use SRI with dynamically generated files! More information: https:&#x2F;&#x2F;www.jsdeliv">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-08-12T07:40:02.203Z">
-<meta property="article:modified_time" content="2021-08-09T23:41:29.000Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-  
+<head profile="http://gmpg.org/xfn/11">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Hexo</title>
   
 <link rel="stylesheet" href="/css/style.css">
 
-  
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet"  media="print" onload="this.media='all'">
+
+  <!--百度统计-->
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body class="main">
+  <div class="clouds">
+    <div id="wrapper">
+      <div id="innerWrapper">
+        <div id="pageTop"></div>
+        <div id="pageHeader">
+          <div id="anniversary">
+            <span>18576</span>
+          </div>
+          <ul id="pageNav">
+            
+            <li><a title="🚩黑石博客" target="_blank" rel="noopener" href="https://www.heson10.com/">🚩黑石博客</a></li>
+            
+            <li><a title="💞情侣哔哔" target="_blank" rel="noopener" href="https://www.heson10.com/lovebb">💞情侣哔哔</a></li>
+            
+          </ul>
+        </div>
+        <div id="pageContent">
+          
+
+          <div id="articleMale">
+
+            <main id="app">
+
+              <div class="timenode" v-for="item in contents" v-cloak>
+                <div class="meta">
+                  <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
+                </div>
+                <div class="body">
+                  <p v-html='item.attributes.content'></p>
+                </div>
+              </div>
+              <div class="load-ctn">
+                <a class="btn lv" v-on:click="loadMore1" v-if="contents" v-cloak>再翻翻</a>
+                <p class="tip" v-else>别急，加载呢</p>
+                </div>
+              <p class="tip">共计发送 {{count}} 条说说</p>
+            </main>
+
+
+
+
+
+
+
+          </div>
+
+          <div id="articleFemale">
+
+            <main id="app2">
+
+              <div class="timenode" v-for="item in contents" v-cloak>
+                <div class="meta">
+                  <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
+                </div>
+                <div class="body">
+                  <p v-html='item.attributes.content'></p>
+                </div>
+              </div>
+              <div class="load-ctn">
+                <a class="btn lv" v-on:click="loadMore2" v-if="contents" v-cloak>再翻翻</a>
+                <p class="tip" v-else>别急，加载呢</p>
+                </div>
+              <p class="tip">共计发送 {{count}} 条说说</p>
+            </main>
+
+          </div>
+          <div class="clear"></div>
+          <div id="footer" class="footer">
+
+    <p align="center"><strong>COPY RIHGT&copy; 2020</strong> | Themes:<strong
+            style="color:#94A4FF">Sweet</strong>-<strong style="color:#FFB296">Clouds</strong> By <a
+            href="https://www.heson10.com" target="_blank"><strong>Heson</strong></a></p>
+
+    <p align="center"> <a target="_blank" rel="noopener" href="https://love.heson10.com" title="情侣微博">
+
+            <strong>情侣微博1.0</strong> 持续优化中
+
+        </a> Proudly By <a href="http://hexo.io" target="_blank">Hexo</a></p>
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<script src="/js/jquery.js"></script>
 
-  
-</head>
+    
+<script src="/js/all.js"></script>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+    <script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.5.3/dist/av-min.js"></script>
+    <script>
+
+        var {
+            Query
+        } = AV;
+        AV.init({
+            appId: "0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz",
+            appKey: "HwCiWuxfpvKiLm4teCUgTIba",
+            serverURLs: 'https://bbapi.heson10.com'
+        });
+
+        var query = new AV.Query('content');
+
+
+
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                page: 0,
+                count: 0,
+                contents: []
+            },
+            methods: {
+                loadMore1: function (event) {
+
+                    var {
+                        Query
+                    } = AV;
+                    AV.init({
+                        appId: "0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz",
+                        appKey: "HwCiWuxfpvKiLm4teCUgTIba",
+                        serverURLs: 'https://bbapi.heson10.com'
+                    });
+
+                    var query = new AV.Query('content');
+                    getData1(++this.page);
+                }
+            }
+        })
+
+        var app2 = new Vue({
+            el: '#app2',
+            data: {
+                page: 0,
+                count: 0,
+                contents: []
+            },
+            methods: {
+                loadMore2: function (event) {
+                    var {
+                        Query
+                    } = AV;
+                    AV.init({
+                        appId: "3ESXk94AEyyC1UiW314gQQz1-gzGzoHsz",
+                        appKey: "x76rfLe86pJxt2Tlzs3a67q6",
+                        serverURLs: 'https://xfbb.heson10.com'
+                    });
+
+                    var query2 = new AV.Query('content');
+
+
+
+
+
+
+                    getData2(++this.page);
+                }
+            }
+        })
+        query.count().then(function (count) {
+            app.count = count;
+        }, function (error) { });
+
+        getData1(0);
+
+        var {
+            Query
+        } = AV;
+        AV.init({
+            appId: "3ESXk94AEyyC1UiW314gQQz1-gzGzoHsz",
+            appKey: "x76rfLe86pJxt2Tlzs3a67q6",
+            serverURLs: 'https://xfbb.heson10.com'
+        });
+
+
+        var query2 = new AV.Query('content');
+
+        query2.count().then(function (count) {
+            app2.count = count;
+        }, function (error) { });
+
+        getData2(0);
+
+        function urlToLink(str) {
+            // var re = /(http|ftp|https):\/\/[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*[\w-\@?^=%&/~+#])?/g; 
+            var re = /\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;
+            var re_forpic = /\bhttps?:\/\/.*?(\.gif|\.jpeg|\.png|\.jpg|\.bmp|\.webp)/g;
+            var re_forpic_vx = /^http:\/\/mmbiz\.qpic\.cn[^\s]*/g;
+            str = str.replace(re, function (website) {
+                return "<a href='" + website + "' target='_blank'> <i class='iconfont icon-lianjie-copy'></i>链接 </a>";
+            });
+            str = str.replace(re_forpic, function (imgurl) {
+                return "<img src='" + imgurl + "'  /> ";
+            });
+            str = str.replace(re_forpic_vx, function (imgurl) {
+                return "<img src='" + imgurl + "'  /> ";
+            });
+            return str;
+        };
+
+        //男生获取哔哔
+        function getData1(page = 0) {
+            query.descending('createdAt').skip(page * 10).limit(10).find().then(function (results) {
+                if (results.length == 0) {
+                    alert('之前没发表过说说了')
+                } else {
+                    let resC = results;
+                    reqData = false;
+                    resC.forEach((i) => {
+                        let d = new Date(i.createdAt);
+                        datetime = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+                        i.attributes.time = datetime;//☆友好地显示时间改为 i.attributes.time = timeago(d);
+                        i.attributes.content = urlToLink(i.attributes.content);
+                        app.contents.push(i);
+                    })
+                }
+
+            }, function (error) { });
+        }
+
+
+        //女生获取哔哔
+        function getData2(page = 0) {
+            query2.descending('createdAt').skip(page * 10).limit(10).find().then(function (results) {
+                if (results.length == 0) {
+                    alert('之前没发表过哔哔了')
+                } else {
+                    let resC = results;
+                    reqData = false;
+                    resC.forEach((i) => {
+                        let d = new Date(i.createdAt);
+                        datetime = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+                        i.attributes.time = datetime; //☆友好地显示时间改为 i.attributes.time = timeago(d);
+                        i.attributes.content = urlToLink(i.attributes.content);
+                        app2.contents.push(i);
+                    })
+                }
+
+            }, function (error) { });
+        }
+
+        //友好地显示时间,按需修改上面标记☆的代码
+        function timeago(dateTimeStamp) {
+
+            var minute = 1000 * 60;
+            var hour = minute * 60;
+            var day = hour * 24;
+            var halfamonth = day * 15;
+            var month = day * 30;
+
+            var now = new Date().getTime();
+            var diffValue = now - dateTimeStamp;
+
+            if (diffValue < 0) {
+                //非法操作
+                //alert("结束日期不能小于开始日期！");
+            }
+
+            var monthC = diffValue / month;
+            var weekC = diffValue / (7 * day);
+            var dayC = diffValue / day;
+            var dayR = diffValue / hour % 24;
+            var hourC = diffValue / hour;
+            var hourR = diffValue / minute % 60;
+            var minC = diffValue / minute;
+            var minR = diffValue / 1000 % 60;
+            if (monthC >= 1) {
+                result = getLocalTime(dateTimeStamp / 1000);
+            } else if (weekC >= 1) {
+                result = parseInt(weekC) + "周前";
+            } else if (dayC >= 1) {
+                result = parseInt(dayC) + "天" + parseInt(dayR) + "小时前";
+            } else if (hourC >= 1) {
+                result = parseInt(hourC) + "小时" + parseInt(hourR) + "分钟前";
+            } else if (minC >= 1) {
+                result = parseInt(minC) + "分钟" + parseInt(minR) + "秒前";
+            } else result = "刚刚发表";
+            return result;
+        }
+
+        function getLocalTime(nS) {
+            return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
+        }
+
+    </script>
+
+
+
+</div>
+        </div>
       </div>
     </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-bb/js/jquery.pjax.min" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/08/12/bb/js/jquery.pjax.min/" class="article-date">
-  <time class="dt-published" datetime="2021-08-12T07:40:02.203Z" itemprop="datePublished">2021-08-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        /**
- * Minified by jsDelivr using UglifyJS v3.4.1.
- * Original file: /npm/jquery-pjax@2.0.1/jquery.pjax.js
- * 
- * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
- */
-!function(v){function t(t,e,n){return n=u(e,n),this.on("click.pjax",t,function(t){var e=n;e.container||((e=v.extend({},n)).container=v(this).attr("data-pjax")),a(t,e)})}function a(t,e,n){n=u(e,n);var a=t.currentTarget,r=v(a);if("A"!==a.tagName.toUpperCase())throw"$.fn.pjax or $.pjax.click requires an anchor element";if(!(1<t.which||t.metaKey||t.ctrlKey||t.shiftKey||t.altKey||location.protocol!==a.protocol||location.hostname!==a.hostname||-1<a.href.indexOf("#")&&c(a)==c(location)||t.isDefaultPrevented())){var i={url:a.href,container:r.attr("data-pjax"),target:a},o=v.extend({},i,n),s=v.Event("pjax:click");r.trigger(s,[o]),s.isDefaultPrevented()||(x(o),t.preventDefault(),r.trigger("pjax:clicked",[o]))}}function e(t,e,n){n=u(e,n);var a=t.currentTarget,r=v(a);if("FORM"!==a.tagName.toUpperCase())throw"$.pjax.submit requires a form element";var i={type:(r.attr("method")||"GET").toUpperCase(),url:r.attr("action"),container:r.attr("data-pjax"),target:a};if("GET"!==i.type&&void 0!==window.FormData)i.data=new FormData(a),i.processData=!1,i.contentType=!1;else{if(r.find(":file").length)return;i.data=r.serializeArray()}x(v.extend({},i,n)),t.preventDefault()}function x(d){d=v.extend(!0,{},v.ajaxSettings,x.defaults,d),v.isFunction(d.url)&&(d.url=d.url());var f=b(d.url).hash,t=v.type(d.container);if("string"!==t)throw"expected string value for 'container' option; got "+t;var a,h=d.context=v(d.container);if(!h.length)throw"the container selector '"+d.container+"' did not match anything";function m(t,e,n){n||(n={}),n.relatedTarget=d.target;var a=v.Event(t,n);return h.trigger(a,e),!a.isDefaultPrevented()}d.data||(d.data={}),v.isArray(d.data)?d.data.push({name:"_pjax",value:d.container}):d.data._pjax=d.container,d.beforeSend=function(t,e){if("GET"!==e.type&&(e.timeout=0),t.setRequestHeader("X-PJAX","true"),t.setRequestHeader("X-PJAX-Container",d.container),!m("pjax:beforeSend",[t,e]))return!1;0<e.timeout&&(a=setTimeout(function(){m("pjax:timeout",[t,d])&&t.abort("timeout")},e.timeout),e.timeout=0);var n=b(e.url);f&&(n.hash=f),d.requestUrl=l(n)},d.complete=function(t,e){a&&clearTimeout(a),m("pjax:complete",[t,e,d]),m("pjax:end",[t,d])},d.error=function(t,e,n){var a=T("",t,d),r=m("pjax:error",[t,e,n,d]);"GET"==d.type&&"abort"!==e&&r&&g(a.url)},d.success=function(t,e,n){var a=x.state,r="function"==typeof v.pjax.defaults.version?v.pjax.defaults.version():v.pjax.defaults.version,i=n.getResponseHeader("X-PJAX-Version"),o=T(t,n,d),s=b(o.url);if(f&&(s.hash=f,o.url=s.href),r&&i&&r!==i)g(o.url);else if(o.contents){if(x.state={id:d.id||j(),url:o.url,title:o.title,container:d.container,fragment:d.fragment,timeout:d.timeout},(d.push||d.replace)&&window.history.replaceState(x.state,o.title,o.url),v.contains(h,document.activeElement))try{document.activeElement.blur()}catch(t){}o.title&&(document.title=o.title),m("pjax:beforeReplace",[o.contents,d],{state:x.state,previousState:a}),h.html(o.contents);var c=h.find("input[autofocus], textarea[autofocus]").last()[0];c&&document.activeElement!==c&&c.focus(),function(t){if(!t)return;var r=v("script[src]");t.each(function(){var t=this.src,e=r.filter(function(){return this.src===t});if(!e.length){var n=document.createElement("script"),a=v(this).attr("type");a&&(n.type=a),n.src=v(this).attr("src"),document.head.appendChild(n)}})}(o.scripts);var u=d.scrollTo;if(f){var l=decodeURIComponent(f.slice(1)),p=document.getElementById(l)||document.getElementsByName(l)[0];p&&(u=v(p).offset().top)}"number"==typeof u&&v(window).scrollTop(u),m("pjax:success",[t,e,n,d])}else g(o.url)},x.state||(x.state={id:j(),url:window.location.href,title:document.title,container:d.container,fragment:d.fragment,timeout:d.timeout},window.history.replaceState(x.state,document.title)),y(x.xhr),x.options=d;var e,n,r=x.xhr=v.ajax(d);return 0<r.readyState&&(d.push&&!d.replace&&(e=x.state.id,n=[d.container,w(h)],E[e]=n,P.push(e),C(S,0),C(P,x.defaults.maxCacheLength),window.history.pushState(null,"",d.requestUrl)),m("pjax:start",[r,d]),m("pjax:send",[r,d])),x.xhr}function n(t,e){var n={url:window.location.href,push:!1,replace:!0,scrollTo:!1};return x(v.extend(n,u(t,e)))}function g(t){window.history.replaceState(null,"",x.state.url),window.location.replace(t)}var p=!0,d=window.location.href,r=window.history.state;function i(t){p||y(x.xhr);var e,n=x.state,a=t.state;if(a&&a.container){if(p&&d==a.url)return;if(n){if(n.id===a.id)return;e=n.id<a.id?"forward":"back"}var r=E[a.id]||[],i=r[0]||a.container,o=v(i),s=r[1];if(o.length){n&&function(t,e,n){var a,r;E[e]=n,"forward"===t?(a=P,r=S):(a=S,r=P);a.push(e),(e=r.pop())&&delete E[e];C(a,x.defaults.maxCacheLength)}(e,n.id,[i,w(o)]);var c=v.Event("pjax:popstate",{state:a,direction:e});o.trigger(c);var u={id:a.id,url:a.url,container:i,push:!1,fragment:a.fragment,timeout:a.timeout,scrollTo:!1};if(s){o.trigger("pjax:start",[null,u]),(x.state=a).title&&(document.title=a.title);var l=v.Event("pjax:beforeReplace",{state:a,previousState:n});o.trigger(l,[s,u]),o.html(s),o.trigger("pjax:end",[null,u])}else x(u);o[0].offsetHeight}else g(location.href)}p=!1}function o(t){var e=v.isFunction(t.url)?t.url():t.url,n=t.type?t.type.toUpperCase():"GET",a=v("<form>",{method:"GET"===n?"GET":"POST",action:e,style:"display:none"});"GET"!==n&&"POST"!==n&&a.append(v("<input>",{type:"hidden",name:"_method",value:n.toLowerCase()}));var r=t.data;if("string"==typeof r)v.each(r.split("&"),function(t,e){var n=e.split("=");a.append(v("<input>",{type:"hidden",name:n[0],value:n[1]}))});else if(v.isArray(r))v.each(r,function(t,e){a.append(v("<input>",{type:"hidden",name:e.name,value:e.value}))});else if("object"==typeof r){var i;for(i in r)a.append(v("<input>",{type:"hidden",name:i,value:r[i]}))}v(document.body).append(a),a.submit()}function y(t){t&&t.readyState<4&&(t.onreadystatechange=v.noop,t.abort())}function j(){return(new Date).getTime()}function w(t){var e=t.clone();return e.find("script").each(function(){this.src||v._data(this,"globalEval",!1)}),e.contents()}function l(t){return t.search=t.search.replace(/([?&])(_pjax|_)=[^&]*/g,"").replace(/^&/,""),t.href.replace(/\?($|#)/,"$1")}function b(t){var e=document.createElement("a");return e.href=t,e}function c(t){return t.href.replace(/#.*/,"")}function u(t,e){return t&&e?((e=v.extend({},e)).container=t,e):v.isPlainObject(t)?t:{container:t}}function f(t,e){return t.filter(e).add(t.find(e))}function h(t){return v.parseHTML(t,document,!0)}function T(t,e,n){var a,r,i={},o=/<html/i.test(t),s=e.getResponseHeader("X-PJAX-URL");if(i.url=s?l(b(s)):n.requestUrl,o){r=v(h(t.match(/<body[^>]*>([\s\S.]*)<\/body>/i)[0]));var c=t.match(/<head[^>]*>([\s\S.]*)<\/head>/i);a=null!=c?v(h(c[0])):r}else a=r=v(h(t));if(0===r.length)return i;if(i.title=f(a,"title").last().text(),n.fragment){var u=r;"body"!==n.fragment&&(u=f(u,n.fragment).first()),u.length&&(i.contents="body"===n.fragment?u:u.contents(),i.title||(i.title=u.attr("title")||u.data("title")))}else o||(i.contents=r);return i.contents&&(i.contents=i.contents.not(function(){return v(this).is("title")}),i.contents.find("title").remove(),i.scripts=f(i.contents,"script[src]").remove(),i.contents=i.contents.not(i.scripts)),i.title&&(i.title=v.trim(i.title)),i}r&&r.container&&(x.state=r),"state"in window.history&&(p=!1);var E={},S=[],P=[];function C(t,e){for(;t.length>e;)delete E[t.shift()]}function s(){return v("meta").filter(function(){var t=v(this).attr("http-equiv");return t&&"X-PJAX-VERSION"===t.toUpperCase()}).attr("content")}function m(){v.fn.pjax=t,v.pjax=x,v.pjax.enable=v.noop,v.pjax.disable=A,v.pjax.click=a,v.pjax.submit=e,v.pjax.reload=n,v.pjax.defaults={timeout:650,push:!0,replace:!1,type:"GET",dataType:"html",scrollTo:0,maxCacheLength:20,version:s},v(window).on("popstate.pjax",i)}function A(){v.fn.pjax=function(){return this},v.pjax=o,v.pjax.enable=m,v.pjax.disable=v.noop,v.pjax.click=v.noop,v.pjax.submit=v.noop,v.pjax.reload=function(){window.location.reload()},v(window).off("popstate.pjax",i)}v.event.props&&v.inArray("state",v.event.props)<0?v.event.props.push("state"):"state"in v.Event.prototype||v.event.addProp("state"),v.support.pjax=window.history&&window.history.pushState&&window.history.replaceState&&!navigator.userAgent.match(/((iPod|iPhone|iPad).+\bOS\s+[1-4]\D|WebApps\/.+CFNetwork)/),v.support.pjax?m():A()}(jQuery);
-//# sourceMappingURL=/sm/0c74f8088ebab5ab7b8903dee073eed15883a81f4eabed4dffbb074376a07783.map
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/12/bb/js/jquery.pjax.min/" data-id="cks8ncs9u000cnst0hlp7hpvw" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2021/08/12/bb/js/loading/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2021/08/12/bb/js/jquery.min/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/08/12/index/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/css/Main/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/bb/js/vue.min/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/bb/js/twikoo.all.min/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/bb/js/Smooth/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
   </div>
 </body>
 </html>

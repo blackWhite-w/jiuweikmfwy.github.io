@@ -1,962 +1,310 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="&#x2F;*All*&#x2F;  .btn:focus, input:focus, textarea:focus { 	outline: none; }  .progress, .message { 	margin: 1rem 0; }  &#x2F;*表单*&#x2F;  .label { 	font-size: .875rem; 	font-weight: bold; 	display: block; 	margin-botto">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2021/08/12/bb/css/UI/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="&#x2F;*All*&#x2F;  .btn:focus, input:focus, textarea:focus { 	outline: none; }  .progress, .message { 	margin: 1rem 0; }  &#x2F;*表单*&#x2F;  .label { 	font-size: .875rem; 	font-weight: bold; 	display: block; 	margin-botto">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-08-12T07:40:02.159Z">
-<meta property="article:modified_time" content="2021-08-09T22:50:17.000Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-  
+<head profile="http://gmpg.org/xfn/11">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Hexo</title>
   
 <link rel="stylesheet" href="/css/style.css">
 
-  
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet"  media="print" onload="this.media='all'">
+
+  <!--百度统计-->
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body class="main">
+  <div class="clouds">
+    <div id="wrapper">
+      <div id="innerWrapper">
+        <div id="pageTop"></div>
+        <div id="pageHeader">
+          <div id="anniversary">
+            <span>18576</span>
+          </div>
+          <ul id="pageNav">
+            
+            <li><a title="🚩黑石博客" target="_blank" rel="noopener" href="https://www.heson10.com/">🚩黑石博客</a></li>
+            
+            <li><a title="💞情侣哔哔" target="_blank" rel="noopener" href="https://www.heson10.com/lovebb">💞情侣哔哔</a></li>
+            
+          </ul>
+        </div>
+        <div id="pageContent">
+          
+
+          <div id="articleMale">
+
+            <main id="app">
+
+              <div class="timenode" v-for="item in contents" v-cloak>
+                <div class="meta">
+                  <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
+                </div>
+                <div class="body">
+                  <p v-html='item.attributes.content'></p>
+                </div>
+              </div>
+              <div class="load-ctn">
+                <a class="btn lv" v-on:click="loadMore1" v-if="contents" v-cloak>再翻翻</a>
+                <p class="tip" v-else>别急，加载呢</p>
+                </div>
+              <p class="tip">共计发送 {{count}} 条说说</p>
+            </main>
+
+
+
+
+
+
+
+          </div>
+
+          <div id="articleFemale">
+
+            <main id="app2">
+
+              <div class="timenode" v-for="item in contents" v-cloak>
+                <div class="meta">
+                  <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
+                </div>
+                <div class="body">
+                  <p v-html='item.attributes.content'></p>
+                </div>
+              </div>
+              <div class="load-ctn">
+                <a class="btn lv" v-on:click="loadMore2" v-if="contents" v-cloak>再翻翻</a>
+                <p class="tip" v-else>别急，加载呢</p>
+                </div>
+              <p class="tip">共计发送 {{count}} 条说说</p>
+            </main>
+
+          </div>
+          <div class="clear"></div>
+          <div id="footer" class="footer">
+
+    <p align="center"><strong>COPY RIHGT&copy; 2020</strong> | Themes:<strong
+            style="color:#94A4FF">Sweet</strong>-<strong style="color:#FFB296">Clouds</strong> By <a
+            href="https://www.heson10.com" target="_blank"><strong>Heson</strong></a></p>
+
+    <p align="center"> <a target="_blank" rel="noopener" href="https://love.heson10.com" title="情侣微博">
+
+            <strong>情侣微博1.0</strong> 持续优化中
+
+        </a> Proudly By <a href="http://hexo.io" target="_blank">Hexo</a></p>
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<script src="/js/jquery.js"></script>
 
-  
-</head>
+    
+<script src="/js/all.js"></script>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+    <script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.5.3/dist/av-min.js"></script>
+    <script>
+
+        var {
+            Query
+        } = AV;
+        AV.init({
+            appId: "0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz",
+            appKey: "HwCiWuxfpvKiLm4teCUgTIba",
+            serverURLs: 'https://bbapi.heson10.com'
+        });
+
+        var query = new AV.Query('content');
+
+
+
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                page: 0,
+                count: 0,
+                contents: []
+            },
+            methods: {
+                loadMore1: function (event) {
+
+                    var {
+                        Query
+                    } = AV;
+                    AV.init({
+                        appId: "0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz",
+                        appKey: "HwCiWuxfpvKiLm4teCUgTIba",
+                        serverURLs: 'https://bbapi.heson10.com'
+                    });
+
+                    var query = new AV.Query('content');
+                    getData1(++this.page);
+                }
+            }
+        })
+
+        var app2 = new Vue({
+            el: '#app2',
+            data: {
+                page: 0,
+                count: 0,
+                contents: []
+            },
+            methods: {
+                loadMore2: function (event) {
+                    var {
+                        Query
+                    } = AV;
+                    AV.init({
+                        appId: "3ESXk94AEyyC1UiW314gQQz1-gzGzoHsz",
+                        appKey: "x76rfLe86pJxt2Tlzs3a67q6",
+                        serverURLs: 'https://xfbb.heson10.com'
+                    });
+
+                    var query2 = new AV.Query('content');
+
+
+
+
+
+
+                    getData2(++this.page);
+                }
+            }
+        })
+        query.count().then(function (count) {
+            app.count = count;
+        }, function (error) { });
+
+        getData1(0);
+
+        var {
+            Query
+        } = AV;
+        AV.init({
+            appId: "3ESXk94AEyyC1UiW314gQQz1-gzGzoHsz",
+            appKey: "x76rfLe86pJxt2Tlzs3a67q6",
+            serverURLs: 'https://xfbb.heson10.com'
+        });
+
+
+        var query2 = new AV.Query('content');
+
+        query2.count().then(function (count) {
+            app2.count = count;
+        }, function (error) { });
+
+        getData2(0);
+
+        function urlToLink(str) {
+            // var re = /(http|ftp|https):\/\/[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*[\w-\@?^=%&/~+#])?/g; 
+            var re = /\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;
+            var re_forpic = /\bhttps?:\/\/.*?(\.gif|\.jpeg|\.png|\.jpg|\.bmp|\.webp)/g;
+            var re_forpic_vx = /^http:\/\/mmbiz\.qpic\.cn[^\s]*/g;
+            str = str.replace(re, function (website) {
+                return "<a href='" + website + "' target='_blank'> <i class='iconfont icon-lianjie-copy'></i>链接 </a>";
+            });
+            str = str.replace(re_forpic, function (imgurl) {
+                return "<img src='" + imgurl + "'  /> ";
+            });
+            str = str.replace(re_forpic_vx, function (imgurl) {
+                return "<img src='" + imgurl + "'  /> ";
+            });
+            return str;
+        };
+
+        //男生获取哔哔
+        function getData1(page = 0) {
+            query.descending('createdAt').skip(page * 10).limit(10).find().then(function (results) {
+                if (results.length == 0) {
+                    alert('之前没发表过说说了')
+                } else {
+                    let resC = results;
+                    reqData = false;
+                    resC.forEach((i) => {
+                        let d = new Date(i.createdAt);
+                        datetime = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+                        i.attributes.time = datetime;//☆友好地显示时间改为 i.attributes.time = timeago(d);
+                        i.attributes.content = urlToLink(i.attributes.content);
+                        app.contents.push(i);
+                    })
+                }
+
+            }, function (error) { });
+        }
+
+
+        //女生获取哔哔
+        function getData2(page = 0) {
+            query2.descending('createdAt').skip(page * 10).limit(10).find().then(function (results) {
+                if (results.length == 0) {
+                    alert('之前没发表过哔哔了')
+                } else {
+                    let resC = results;
+                    reqData = false;
+                    resC.forEach((i) => {
+                        let d = new Date(i.createdAt);
+                        datetime = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+                        i.attributes.time = datetime; //☆友好地显示时间改为 i.attributes.time = timeago(d);
+                        i.attributes.content = urlToLink(i.attributes.content);
+                        app2.contents.push(i);
+                    })
+                }
+
+            }, function (error) { });
+        }
+
+        //友好地显示时间,按需修改上面标记☆的代码
+        function timeago(dateTimeStamp) {
+
+            var minute = 1000 * 60;
+            var hour = minute * 60;
+            var day = hour * 24;
+            var halfamonth = day * 15;
+            var month = day * 30;
+
+            var now = new Date().getTime();
+            var diffValue = now - dateTimeStamp;
+
+            if (diffValue < 0) {
+                //非法操作
+                //alert("结束日期不能小于开始日期！");
+            }
+
+            var monthC = diffValue / month;
+            var weekC = diffValue / (7 * day);
+            var dayC = diffValue / day;
+            var dayR = diffValue / hour % 24;
+            var hourC = diffValue / hour;
+            var hourR = diffValue / minute % 60;
+            var minC = diffValue / minute;
+            var minR = diffValue / 1000 % 60;
+            if (monthC >= 1) {
+                result = getLocalTime(dateTimeStamp / 1000);
+            } else if (weekC >= 1) {
+                result = parseInt(weekC) + "周前";
+            } else if (dayC >= 1) {
+                result = parseInt(dayC) + "天" + parseInt(dayR) + "小时前";
+            } else if (hourC >= 1) {
+                result = parseInt(hourC) + "小时" + parseInt(hourR) + "分钟前";
+            } else if (minC >= 1) {
+                result = parseInt(minC) + "分钟" + parseInt(minR) + "秒前";
+            } else result = "刚刚发表";
+            return result;
+        }
+
+        function getLocalTime(nS) {
+            return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
+        }
+
+    </script>
+
+
+
+</div>
+        </div>
       </div>
     </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-bb/css/UI" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/08/12/bb/css/UI/" class="article-date">
-  <time class="dt-published" datetime="2021-08-12T07:40:02.159Z" itemprop="datePublished">2021-08-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        /*All*/
-
-.btn:focus, input:focus, textarea:focus {
-	outline: none;
-}
-
-.progress, .message {
-	margin: 1rem 0;
-}
-
-/*表单*/
-
-.label {
-	font-size: .875rem;
-	font-weight: bold;
-	display: block;
-	margin-bottom: .5rem;
-}
-
-.input {
-	font-family: inherit;
-	font-size: inherit;
-	display: block;
-	width: 100%;
-	height: 2.5rem;
-	padding: .5rem;
-	margin-bottom: 1rem;
-	border: 3px solid rgba(26, 188, 156, 0.4);
-	border-radius: var(--yj);
-	box-sizing: border-box;
-}
-
-.input:focus {
-	border: 3px solid #1ABC9C;
-}
-
-.select {
-	font-family: inherit;
-	font-size: inherit;
-	display: block;
-	width: 100%;
-	height: 2.5rem;
-	padding: .5rem;
-	margin-bottom: 1rem;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	box-sizing: border-box;
-}
-
-.textarea {
-	font-family: inherit;
-	font-size: inherit;
-	display: block;
-	min-height: 6rem;
-	max-width: 100%;
-	min-width: 100%;
-	width: 100%;
-	padding: .5rem;
-	margin-bottom: 1rem;
-	border: 3px solid rgba(26, 188, 156, 0.4);
-	border-radius: var(--yj);
-	box-sizing: border-box;
-}
-
-.textarea:focus {
-	outline: none;
-	border: 3px solid #1ABC9C;
-}
-
-/*按钮*/
-
-.btn {
-	font-size: 1rem;
-	text-decoration: none;
-	display: inline-block;
-	font-weight: bold;
-	text-align: center;
-	box-sizing: border-box;
-	padding: 0;
-	padding: 0.2rem 1rem;
-	line-height: normal;
-	background: none;
-	color: var(--hei);
-	border-style: solid;
-	border-width: 3px;
-	border-color: var(--mhei);
-	border-radius: 10rem;
-	letter-spacing: 0.4px;
-	transition: .18s ease-out;
-	-webkit-transition: .18s ease-out;
-	font-family: 'Mulish', -apple-system, "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", sans-serif
-}
-
-.btn:hover {
-	background: var(--hei);
-	color: var(--bai);
-	transition: .18s ease-out;
-	-webkit-transition: .18s ease-out;
-}
-
-.btn.lan:hover, .btn.zi:hover, .btn.lv:hover, .btn.huang:hover, .btn.hong:hover {
-	color: var(--bai);
-}
-
-.btn.hong {
-	color: var(--hong);
-}
-
-.btn.hong {
-	border-color: var(--mhong);
-}
-
-.btn.hong:hover {
-	background: var(--mhong);
-}
-
-.btn.huang {
-	color: var(--huang);
-}
-
-.btn.huang {
-	border-color: var(--mhuang);
-}
-
-.btn.huang:hover {
-	background: var(--mhuang);
-}
-
-.btn.lv {
-	color: var(--lv);
-}
-
-.btn.lv {
-	border-color: var(--mlv);
-}
-
-.btn.lv:hover {
-	background: var(--mlv);
-}
-
-.btn.lan {
-	color: var(--lan);
-}
-
-.btn.lan {
-	border-color: var(--mlan);
-}
-
-.btn.lan:hover {
-	background: var(--mlan);
-}
-
-.btn.zi {
-	color: var(--zi);
-}
-
-.btn.zi {
-	border-color: var(--mzi);
-}
-
-.btn.zi:hover {
-	background: var(--mzi);
-}
-
-/*画廊*/
-
-.photos {
-	width: 100%;
-	max-width: 100%;
-	display: flex;
-	position: relative;
-}
-
-.photos a:first-of-type {
-	margin-left: 0;
-}
-
-.photos a {
-	display: block;
-	flex: 1;
-	border: none;
-	margin: 0 5px;
-}
-
-.photos a:hover {
-	border-bottom: unset
-}
-
-/*刮刮乐*/
-
-blur-text, blur-text * {
-	text-shadow: rgba(0, 0, 0, 0.701961) 0px 0px 10px;
-	color: transparent;
-	padding-top: 3px;
-}
-
-/*黑幕*/
-
-darkb-text, darkb-text * {
-	background-color: #12121c;
-	color: #12121c;
-	text-shadow: none;
-	transition: color 0.3s;
-	padding-top: 3px;
-}
-
-darkb-text:hover, darkb-text:active {
-	color: #FFF;
-}
-
-/*彩虹文字*/
-
-rainbow-text, rainbow-text * {
-	padding-top: 3px;
-	background-image: linear-gradient( to left, orangered, orange, gold, lightgreen, cyan, dodgerblue, mediumpurple, hotpink, orangered);
-	background-size: 110vw;
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	-webkit-animation: rainbowan 60s linear infinite;
-	animation: rainbowan 60s linear infinite;
-}
-
-@-webkit-keyframes rainbowan {
-	to {
-		background-position: -2000vw;
-	}
-}
-
-@keyframes rainbowan {
-	to {
-		background-position: -2000vw;
-	}
-}
-
-/*进度条*/
-
-.progress {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	border: none;
-	border-radius: 290486px;
-	display: block;
-	height: 1rem;
-	overflow: hidden;
-	padding: 0;
-	width: 100%;
-}
-
-.progress.hong::-webkit-progress-bar {
-	background-color: var(--lhong);
-}
-
-.progress.huang::-webkit-progress-bar {
-	background-color: var(--lhuang)
-}
-
-.progress.lan::-webkit-progress-bar {
-	background-color: var(--llan)
-}
-
-.progress.lv::-webkit-progress-bar {
-	background-color: var(--llv)
-}
-
-.progress.zi::-webkit-progress-bar {
-	background-color: var(--lzi)
-}
-
-.progress::-webkit-progress-value {
-	background-color: #4a4a4a;
-}
-
-.progress::-moz-progress-bar {
-	background-color: #4a4a4a;
-}
-
-.progress::-ms-fill {
-	background-color: #4a4a4a;
-	border: none;
-}
-
-.progress.hong::-webkit-progress-value {
-	background-color: var(--mhong);
-}
-
-.progress.hong::-moz-progress-bar {
-	background-color: var(--mhong);
-}
-
-.progress.hong::-ms-fill {
-	background-color: var(--mhong);
-}
-
-.progress.hong:indeterminate {
-	background-image: linear-gradient(to right, var(--mhong) 30%, #ededed 30%);
-}
-
-.progress.lan::-webkit-progress-value {
-	background-color: var(--mlan);
-}
-
-.progress.lan::-moz-progress-bar {
-	background-color: var(--mlan);
-}
-
-.progress.lan::-ms-fill {
-	background-color: var(--mlan);
-}
-
-.progress.lan:indeterminate {
-	background-image: linear-gradient(to right, var(--mlan) 30%, #ededed 30%);
-}
-
-.progress.huang::-webkit-progress-value {
-	background-color: var(--mhuang);
-}
-
-.progress.huang::-moz-progress-bar {
-	background-color: var(--mhuang);
-}
-
-.progress.huang::-ms-fill {
-	background-color: var(--mhuang);
-}
-
-.progress.huang:indeterminate {
-	background-image: linear-gradient(to right, var(--mhuang) 30%, #ededed 30%);
-}
-
-.progress.zi::-webkit-progress-value {
-	background-color: var(--mzi);
-}
-
-.progress.zi::-moz-progress-bar {
-	background-color: var(--mzi);
-}
-
-.progress.zi::-ms-fill {
-	background-color: var(--mzi);
-}
-
-.progress.zi:indeterminate {
-	background-image: linear-gradient(to right, var(--mzi) 30%, #ededed 30%);
-}
-
-.progress.lv::-webkit-progress-value {
-	background-color: var(--mlv);
-}
-
-.progress.lv::-moz-progress-bar {
-	background-color: var(--mlv);
-}
-
-.progress.lv::-ms-fill {
-	background-color: var(--mlv);
-}
-
-.progress.lv:indeterminate {
-	background-image: linear-gradient(to right, var(--mlv) 30%, #ededed 30%);
-}
-
-.progress:indeterminate {
-	-webkit-animation-duration: 1.5s;
-	animation-duration: 1.5s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-name: moveIndeterminate;
-	animation-name: moveIndeterminate;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
-	background-color: #ededed;
-	background-image: linear-gradient(to right, #4a4a4a 30%, #ededed 30%);
-	background-position: top left;
-	background-repeat: no-repeat;
-	background-size: 150% 150%;
-}
-
-.progress:indeterminate::-webkit-progress-bar {
-	background-color: transparent;
-}
-
-.progress:indeterminate::-moz-progress-bar {
-	background-color: transparent;
-}
-
-@-webkit-keyframes moveIndeterminate {
-	from {
-		background-position: 200% 0;
-	}
-	to {
-		background-position: -200% 0;
-	}
-}
-
-@keyframes moveIndeterminate {
-	from {
-		background-position: 200% 0;
-	}
-	to {
-		background-position: -200% 0;
-	}
-}
-
-/*折叠面板*/
-
-.accordion {
-	margin: 1rem 0;
-	padding: 0;
-	list-style: none;
-}
-
-.open .accordion-thumb {
-	color: var(--bai) !important;
-	border-bottom-right-radius: unset;
-	border-bottom-left-radius: unset;
-}
-
-.accordion.lan>.open>.accordion-thumb {
-	background-color: var(--mlan);
-}
-
-.accordion.zi>.open>.accordion-thumb {
-	background-color: var(--mzi);
-}
-
-.accordion.hong>.open>.accordion-thumb {
-	background-color: var(--mhong);
-}
-
-.accordion.lv>.open>.accordion-thumb {
-	background-color: var(--mlv);
-}
-
-.accordion.huang>.open>.accordion-thumb {
-	background-color: var(--mhuang);
-}
-
-.accordion.lan .accordion-thumb, .accordion.lan .accordion-panel, .accordion.lan .accordion-panel * {
-	background-color: var(--llan);
-	color: var(--lan);
-}
-
-.accordion.lv .accordion-thumb, .accordion.lv .accordion-panel, .accordion.lv .accordion-panel * {
-	background-color: var(--llv);
-	color: var(--lv);
-}
-
-.accordion.huang .accordion-thumb, .accordion.huang .accordion-panel, .accordion.huang .accordion-panel * {
-	background-color: var(--lhuang);
-	color: var(--huang);
-}
-
-.accordion.hong .accordion-thumb, .accordion.hong .accordion-panel, .accordion.hong .accordion-panel * {
-	background-color: var(--lhong);
-	color: var(--hong);
-}
-
-.accordion.zi .accordion-thumb, .accordion.zi .accordion-panel, .accordion.zi .accordion-panel * {
-	background-color: var(--lzi);
-	color: var(--zi);
-}
-
-.accordion-thumb {
-	line-height: 1.6;
-	border-radius: var(--yj);
-	padding: 0.75em 1em;
-	cursor: pointer;
-	transition: all 0.4s ease;
-}
-
-.accordion-thumb::before {
-	content: '';
-	display: inline-block;
-	height: 7px;
-	width: 7px;
-	margin-right: 1rem;
-	margin-left: .5rem;
-	vertical-align: middle;
-	border-right: 1px solid;
-	border-bottom: 1px solid;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	-webkit-transition: -webkit-transform .2s ease-out;
-	transition: -webkit-transform .2s ease-out;
-	transition: transform .2s ease-out;
-}
-
-.accordion-panel {
-	margin: 0;
-	padding: 1.25em 1.5em;
-	display: none;
-	border-bottom-right-radius: var(--yj);
-	border-bottom-left-radius: var(--yj);
-}
-
-.accordion-item.open .accordion-thumb::before {
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-/*信息板*/
-
-.message {
-	background-color: whitesmoke;
-	border-radius: 4px;
-	font-size: 1rem;
-}
-
-.message strong {
-	color: currentColor;
-}
-
-.message a {
-	color: currentColor;
-}
-
-.message.lv, .tags.lv {
-	background-color: var(--llv);
-}
-
-.message.lv .message_header {
-	background-color: var(--mlv);
-	color: #fff;
-}
-
-.message.lv .message_body *, .tags.lv {
-	color: var(--lv);
-}
-
-.message.lv .message_body {
-	border-color: var(--lv);
-	color: var(--lv);
-}
-
-.message.lan, .tags.lan {
-	background-color: var(--llan);
-}
-
-.message.lan .message_header {
-	background-color: var(--mlan);
-	color: #fff;
-}
-
-.message.lan .message_body {
-	border-color: var(--lan);
-	color: var(--lan);
-}
-
-.message.lan .message_body *, .tags.lan {
-	color: var(--lan);
-}
-
-.message.hong, .tags.hong {
-	background-color: var(--lhong);
-}
-
-.message.hong .message_header {
-	background-color: var(--mhong);
-	color: #fff;
-}
-
-.message.hong .message_body *, .tags.hong {
-	color: var(--hong);
-}
-
-.message.hong .message_body {
-	border-color: var(--hong);
-	color: var(--hong);
-}
-
-.message.huang, .tags.huang {
-	background-color: var(--lhuang);
-}
-
-.message.huang .message_header {
-	background-color: var(--mhuang);
-	color: #fff;
-}
-
-.message.huang .message_body {
-	border-color: var(--huang);
-	color: var(--huang);
-}
-
-.message.huang .message_body *, .tags.huang {
-	color: var(--huang);
-}
-
-.message.zi, .tags.zi {
-	background-color: var(--lzi);
-}
-
-.message.zi .message_header {
-	background-color: var(--mzi);
-	color: #fff;
-}
-
-.message.zi .message_body {
-	border-color: var(--zi);
-	color: var(--zi);
-}
-
-.message.zi .message_body *, .tags.zi {
-	color: var(--zi);
-}
-
-.message_header {
-	align-items: center;
-	background-color: #4a4a4a;
-	border-radius: 4px 4px 0 0;
-	color: #fff;
-	display: flex;
-	font-weight: 700;
-	justify-content: space-between;
-	line-height: 1.25;
-	padding: 0.75em 1em;
-	position: relative;
-}
-
-.message_header+.message_body {
-	border-width: 0;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-}
-
-.message_body {
-	border-color: #dbdbdb;
-	border-radius: 4px;
-	border-style: solid;
-	border-width: 0 0 0 4px;
-	color: #4a4a4a;
-	padding: 1.25em 1.5em;
-	word-break: break-all;
-}
-
-.message_body code, .message_body pre {
-	background-color: white;
-}
-
-.message_body pre code {
-	background-color: transparent;
-}
-
-/*Tabs*/
-
-.tabs-wrap {
-	border-radius: 6px;
-	max-width: 100%;
-	display: -webkit-box;
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
-	list-style: none;
-	background-color: #fff;
-	margin: 40px 0;
-	border: 1px solid rgba(0, 0, 0, 0.23);
-}
-
-.tabs-wrap label {
-	border-radius: 6px 6px 0 0;
-	cursor: pointer;
-	display: block;
-	text-decoration: none;
-	color: #333;
-	-webkit-box-flex: 3;
-	flex-grow: 3;
-	text-align: center;
-	background-color: #f2f2f2;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	text-align: center;
-	-webkit-transition: 0.3s background-color ease, 0.3s box-shadow ease;
-	transition: 0.3s background-color ease, 0.3s box-shadow ease;
-	height: 50px;
-	box-sizing: border-box;
-	padding: 15px;
-	line-height: 24px;
-}
-
-.tabs-wrap label:first-of-type:not(:last-of-type) {
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
-
-.tabs-wrap label:not(:first-of-type):not(:last-of-type) {
-	border-radius: 0;
-}
-
-.tabs-wrap label:last-of-type:not(:first-of-type) {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
-.tabs-item.active {
-	background: #fff;
-}
-
-.tabs-main {
-	width: 100%;
-	background: #fff;
-	padding: 1rem;
-}
-
-.tabs-content.active {
-	opacity: 1;
-	position: relative;
-	top: 0;
-	z-index: 1;
-	-webkit-transform: translateY(0px);
-	transform: translateY(0px);
-	text-shadow: 0 0 0;
-	display: block;
-}
-
-.tabs-content {
-	padding: 10px 25px;
-	background-color: transparent;
-	position: absolute;
-	width: 100%;
-	z-index: -1;
-	opacity: 0;
-	left: 0;
-	-webkit-transform: translateY(-3px);
-	transform: translateY(-3px);
-	border-radius: 6px;
-	display:none
-}
-
-/*tags*/
-
-.tags {
-	align-items: center;
-	border-radius: var(--yj);
-	display: inline-flex;
-	height: 2em;
-	justify-content: center;
-	line-height: 1.5;
-	padding-left: .75em;
-	padding-right: .75em;
-	white-space: nowrap;
-}
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/12/bb/css/UI/" data-id="cks8ncs9f0006nst0c4vg414r" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2021/08/12/bb/js/app.min/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2021/08/12/bb/css/Mulish&display/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/08/12/index/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/css/Main/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/bb/js/vue.min/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/bb/js/twikoo.all.min/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/bb/js/Smooth/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
   </div>
 </body>
 </html>

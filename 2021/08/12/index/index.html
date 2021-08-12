@@ -1,423 +1,310 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="我的小窝 - Hexo博客var _hmt&#x3D;_hmt||[];setTimeout(function(){var e&#x3D;document.createElement(&quot;script&quot;);e.src&#x3D;&quot;https:&#x2F;&#x2F;hm.baidu.com&#x2F;hm.js?5fb5fd0062e816d3a3ca2dacf095bc0f&quot;,e.defer&#x3D;!0;var t&#x3D;document.getElementsByT">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2021/08/12/index/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="我的小窝 - Hexo博客var _hmt&#x3D;_hmt||[];setTimeout(function(){var e&#x3D;document.createElement(&quot;script&quot;);e.src&#x3D;&quot;https:&#x2F;&#x2F;hm.baidu.com&#x2F;hm.js?5fb5fd0062e816d3a3ca2dacf095bc0f&quot;,e.defer&#x3D;!0;var t&#x3D;document.getElementsByT">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2021/01/20210109145254.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2021/01/20210109145254.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/12/20201224232157.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/12/20201224232157.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/12/20201219000615.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/12/20201219000615.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/10/20201030231049.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/10/20201030231049.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/12/20201204132350.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/12/20201204132350.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/11/20201130170016.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/11/20201130170016.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/11/20201122004400.png">
-<meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/11/20201122004400.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/heson10/pic@master/pic/20201111142917.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/heson10/pic@master/pic/20201111142917.png">
-<meta property="og:image" content="https://pic.heson10.com/wallpapers/yun_logo6.png">
-<meta property="article:published_time" content="2021-08-12T07:40:02.304Z">
-<meta property="article:modified_time" content="2021-08-11T05:54:42.000Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://picup.heson10.com/img/upyun/2021/01/20210109145254.png">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-  
+<head profile="http://gmpg.org/xfn/11">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Hexo</title>
   
 <link rel="stylesheet" href="/css/style.css">
 
-  
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet"  media="print" onload="this.media='all'">
+
+  <!--百度统计-->
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body class="main">
+  <div class="clouds">
+    <div id="wrapper">
+      <div id="innerWrapper">
+        <div id="pageTop"></div>
+        <div id="pageHeader">
+          <div id="anniversary">
+            <span>18576</span>
+          </div>
+          <ul id="pageNav">
+            
+            <li><a title="🚩黑石博客" target="_blank" rel="noopener" href="https://www.heson10.com/">🚩黑石博客</a></li>
+            
+            <li><a title="💞情侣哔哔" target="_blank" rel="noopener" href="https://www.heson10.com/lovebb">💞情侣哔哔</a></li>
+            
+          </ul>
+        </div>
+        <div id="pageContent">
+          
+
+          <div id="articleMale">
+
+            <main id="app">
+
+              <div class="timenode" v-for="item in contents" v-cloak>
+                <div class="meta">
+                  <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
+                </div>
+                <div class="body">
+                  <p v-html='item.attributes.content'></p>
+                </div>
+              </div>
+              <div class="load-ctn">
+                <a class="btn lv" v-on:click="loadMore1" v-if="contents" v-cloak>再翻翻</a>
+                <p class="tip" v-else>别急，加载呢</p>
+                </div>
+              <p class="tip">共计发送 {{count}} 条说说</p>
+            </main>
+
+
+
+
+
+
+
+          </div>
+
+          <div id="articleFemale">
+
+            <main id="app2">
+
+              <div class="timenode" v-for="item in contents" v-cloak>
+                <div class="meta">
+                  <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
+                </div>
+                <div class="body">
+                  <p v-html='item.attributes.content'></p>
+                </div>
+              </div>
+              <div class="load-ctn">
+                <a class="btn lv" v-on:click="loadMore2" v-if="contents" v-cloak>再翻翻</a>
+                <p class="tip" v-else>别急，加载呢</p>
+                </div>
+              <p class="tip">共计发送 {{count}} 条说说</p>
+            </main>
+
+          </div>
+          <div class="clear"></div>
+          <div id="footer" class="footer">
+
+    <p align="center"><strong>COPY RIHGT&copy; 2020</strong> | Themes:<strong
+            style="color:#94A4FF">Sweet</strong>-<strong style="color:#FFB296">Clouds</strong> By <a
+            href="https://www.heson10.com" target="_blank"><strong>Heson</strong></a></p>
+
+    <p align="center"> <a target="_blank" rel="noopener" href="https://love.heson10.com" title="情侣微博">
+
+            <strong>情侣微博1.0</strong> 持续优化中
+
+        </a> Proudly By <a href="http://hexo.io" target="_blank">Hexo</a></p>
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<script src="/js/jquery.js"></script>
 
-  
-</head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-index" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/08/12/index/" class="article-date">
-  <time class="dt-published" datetime="2021-08-12T07:40:02.304Z" itemprop="datePublished">2021-08-12</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <!DOCTYPE html><html lang="zh-cn"><head><meta charset="UTF-8"><meta http-equiv="Content-Type" content="text/html"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta name="HandheldFriendly" content="true"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1"><link rel="canonical" href="http://hm46334.hanming.fun/"><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//cdn.jsdelivr.net"><link rel="icon" type="image/png" href="https://pic.heson10.com/wallpapers/favicon.png"><link href="https://pic.heson10.com/wallpapers/favicon.png" rel="icon"><link rel="apple-touch-icon-precomposed" href="https://pic.heson10.com/wallpapers/favicon.png"><title>我的小窝 - Hexo博客</title><meta name="keywords" content="黑石,草根,博客,站长,Heson,Hexo,Hexo博客,个人博客,博客网站,静态网站,纯静态博客网站"><meta name="description" content="我的小窝，草根博客站长Heson的Hexo博客站点，专注分享Hexo学习心得。"><link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" media="print" onload='this.media="all"'><link href="https://cdn.jsdelivr.net/gh/heson10/pic@master/css/app.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/gh/heson10/pic@master/css/duta.css" rel="stylesheet"><link rel="stylesheet" href="css/Main.css"><link href="https://cdn.jsdelivr.net/gh/heson10/pic@master/css/UI.css" rel="stylesheet"><script async src="https://at.alicdn.com/t/font_1826851_x246yki7bra.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/heson10/pic@master/js/loading.js"></script><script src="https://cdn.jsdelivr.net/gh/heson10/pic@master/js/app.min.js"></script><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;900&display=swap" rel="stylesheet" media="print" onload='this.media="all"'><script>var _hmt=_hmt||[];setTimeout(function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?5fb5fd0062e816d3a3ca2dacf095bc0f",e.defer=!0;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)},5e3)</script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="我的小窝 - Hexo博客" type="application/atom+xml"></head><div id="clickCanvas" style="position:fixed;left:0;top:0;z-index:999999999;pointer-events:none"></div><style>body,input,select,textarea{font-family:Mulish,-apple-system,'Noto Serif SC',"PingFang SC","Microsoft Yahei UI","Microsoft Yahei",sans-serif}.ajaxcard:hover{transform:unset}</style><script>CUTEEN_SETTING={PJAX:!0,HERO_IMG:!0,IS_MOBILE:!1,NOPA:!1,SITE_URL:"http://hm46334.hanming.fun/",THEME_COLOR:0,STATIC_PATH:"/",AJAX_PAGE:!1,HEADROOM:!1,CDN_PATH:"",MUSICDATA1:"115762175",MUSICDATA2:"netease",QIPAO:!0}</script><body><div id="forpc" class="nav w100 fixed clearfix border-box haveimg nobg p1"><div class="flex justify-between mx-auto nav-content items-center"><ul class="bold table nowrap"><li class="pr1 h2 table-cell align-middle sitetitle"><a href="/">我的小窝</a></li><li class="xs-hide px1 h4 table-cell align-middle relative dropdown"><a>🔎找文章</a><div class="mt1 absolute dropblur rounded"><ul class="py1"><li><a class="block px2 p1" href="/archives/">📚归档</a></li><li><a class="block px2 p1" href="/tags/">🔖标签</a></li><li><a class="block px2 p1" href="/categories/">📦分类</a></li></ul></div></li><li class="xs-hide px1 h4 table-cell align-middle relative"><a href="/bb/" no-pjax>🔊哔哔</a></li><li class="xs-hide px1 h4 table-cell align-middle relative dropdown"><a>📑页面</a><div class="mt1 absolute dropblur rounded"><ul class="py1"><li><a class="block px2 p1" href="/guestbook/">📬留言板</a></li><li><a class="block px2 p1" href="/links/">🤝友链</a></li><li><a class="block px2 p1" href="/lovebb/" no-pjax>💕情侣哔哔</a></li><li><a class="block px2 p1" href="/about/">👑关于</a></li><li><a class="block px2 p1" target="_blank" href="https://github.com/heson525/myhexoblog/tree/main/source/_posts" rel="nofollow noopener">📝撰写</a></li></ul></div></li><li class="xs-hide px1 h4 table-cell align-middle relative dropdown"><a>🚩分站</a><div class="mt1 absolute dropblur rounded"><ul class="py1"><li><a class="block px2 p1" href="/volantis/" no-pjax>🛕Volantis主题</a></li><li><a class="block px2 p1" href="/next/" no-pjax>🕍Next主题</a></li></ul></div></li><li class="xs-hide px1 h4 table-cell align-middle relative"><a target="_blank" rel="noopener" href="http://hm46334.hanming.fun/rizhi/">💰 日志</a></li><li class="xs-hide px1 h4 table-cell align-middle relative"><a target="_blank" rel="noopener" href="https://box.heson10.com/">💖 百宝箱</a></li><li class="xs-hide px1 h4 table-cell align-middle relative"><a rel="noopener external nofollow noreferrer noopener" target="_blank" href="https://travellings.now.sh/">🚀 开往</a></li></ul><ul class="table"><li class="table-cell align-middle"><div id="CTPlayer" class="relative flex items-center"></div></li><a class="table-cell align-middle" href="javascript:void(0)" onclick="CuteenFunc.SwitchDarkMode()"><li class="center circle icon ml1 icon align-middle"><svg class="icon" aria-hidden="true"><use id="modeicon" xlink:href="#icon-_moon"></use></svg></li></a><a class="table-cell align-middle" href="#" data-izimodal-open="#searchbox" data-izimodal-transitionin="fadeInDown"><li class="center circle icon ml1 icon align-middle"><svg class="icon" aria-hidden="true" width="128" height="128"><use xlink:href="#icon-chazhao"></use></svg></li></a></ul></div></div><div id="formobile" class="d-n"><div class="nav w100 fixed clearfix border-box haveimg nobg p1"><div class="flex justify-between items-center z4 mobile_nav"><div id="left-menu" onclick="CuteenFunc.MobileMenu()" class="h3"><i class="fas fa-bars"></i></div><div class="pr1 h2 table-cell align-middle sitetitle"><a href="/">我的小窝</a></div><div class="h3"><a href="#" data-izimodal-open="#searchbox" data-izimodal-transitionin="fadeInDown"><i class="fas fa-search"></i></a></div></div></div><div id="mobar"><nav id="site-navigation" class="fixed top-0 bottom-0 z4 sidebar no-user-select"><div id="nav" class="h100 absolute top-0 bottom-0"><hr><div class="mt4"><div class="Nav_mobile_content flex justify-center items-center"><a onclick="CuteenFunc.MobileMenu()" class="Nav_mobile_logo block circle" href="/about/" style="background-image:url(https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png)"></a></div></div><div class="h4 bold center">我的小窝</div><div class="h5 center mt1">人生在勤，不索何获</div><hr><div class="h6 p2"><li class="fas fa-stream pr1"></li>独立页面</div><li class="px3 py1 h5"><a class="ml2" href="/guestbook/" title="留言板">📬留言板</a></li><li class="px3 py1 h5"><a class="ml2" href="/links/" title="友链">🤝友链</a></li><li class="px3 py1 h5"><a class="ml2" href="/bb/" title="说说" no-pjax>🔊说说</a></li><li class="px3 py1 h5"><a class="ml2" href="/about/" title="关于">👑关于</a></li><li class="px3 py1 h5"><a class="ml2" target="_blank" rel="noopener" href="http://hm46334.hanming.fun/rizhi/" title="日志">💰日志</a></li><li class="px3 py1 h5"><a class="ml2" target="_blank" rel="noopener" href="https://box.heson10.com/" title="百宝箱">💖百宝箱</a></li><li class="px3 py1 h5 mobfl"><span class="ml2 mobzk flex justify-between items-center"><p>🔎找文章</p><i class="fas fa-angle-right"></i></span></li><ul class="mobzkcon pl3 h5" style="display:none"><li class="p1"><a onclick="CuteenFunc.MobileMenu()" class="ml3" href="/archives/" title="📚归档">📚归档</a></li><li class="p1"><a onclick="CuteenFunc.MobileMenu()" class="ml3" href="/tags/" title="🔖标签">🔖标签</a></li><li class="p1"><a onclick="CuteenFunc.MobileMenu()" class="ml3" href="/categories/" title="📦分类">📦分类</a></li></ul><hr><div class="h6 p2"><li class="fas fa-stream pr1"></li>分类页面</div><li class="px3 py1 h5"><a class="ml2" href="/categories/hexo/">🍰 HEXO</a></li><li class="px3 py1 h5"><a class="ml2" href="/categories/WordPress/">🍱 WordPress</a></li><li class="px3 py1 h5"><a class="ml2" href="/categories/生活随笔/" title="生活随笔">🍹 生活随笔</a></li><hr><div class="h6 p2"><li class="fas fa-stream pr1"></li>其他页面</div><li class="px3 py1 h5"><a class="ml2" target="_blank" rel="noopener" href="https://travellings.now.sh/" title="开往">🚀开往</a></li></div><div class="side-toolbar bottom-0 fixed flex items-center justify-center"><div id="CTPlayer-mob" class="relative flex items-center"></div></div></nav></div></div><div id="pjax"><div id="hero" class="w100 overflow-hidden flex relative mb2 pt4 hero-bai" style="height:600px"><div class="w100 h100 left-0 top-0 absolute hero-img"><img class="w100 h100 hero_image lazyload lazyload" data-src="" class="lazyload" data-srcset="image/webp/beijing.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div><div class="z4 relative hero-title p4 mb3 flex w100 justify-center self-center"><div class="bas-title center"><p class="big-title bold">我的小窝</p><p class="sub-title mt2">人生在勤，不索何获&nbsp;<span class="typed-cursor h2 typed-cursor--blink">|</span></p></div></div></div><div class="card-box clearfix mx-auto"><div class="card-content mx-auto" style="max-width:900px"><div id="BLOG_CARD" class="cuteup xs-col-12 lg-col lg-col-12"><section><section class="ajaxcard m1"><div class="mb2 relative flex overflow-hidden bghei cardstyle mx-auto"><div class="card-bg-img"><img class="w100 absolute top-0 left-0 right-0 bottom-0 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2021/01/20210109145254.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2021/01/20210109145254.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div><div class="relative overflow-hidden card-img-box yqimg"><div class="card-img absolute top-0 left-0 right-0 bottom-0"><img class="h100 w100 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2021/01/20210109145254.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2021/01/20210109145254.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div></div><div class="relative my0 mx2 self-center card-info cardmao"><ul class="flex h6 mb1 overflow-hidden info"><li class="info-date"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-LaunchTime"></use></svg><span>2021 年 01 月 09 日</span></li><li class="Post_View"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg><span><a class="article-category-link" href="/categories/hexo/">hexo</a>►<a class="article-category-link" href="/categories/hexo/%E5%93%94%E5%93%94/">哔哔</a>►<a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E4%BA%A4%E6%B5%81/">技术交流</a></span></li></ul><a href="posts/21347.html"><div class="h2 mb1 card-title overflow-hidden bold">给哔哔安了个家</div><div class="overflow-hidden mb1 h4 card-des">https://bb.js.org 上线了。 前面关于适配哔哔杂七杂八写了好多文章，总感觉特别乱。 为了方便哔哔更好地适配，更为了给哔哔添加新的功能，我把哔哔的前端代码重构了，使用Webpack打包为bbtalk.js。...</div></a></div></div></section><section class="ajaxcard m1"><div class="mb2 relative flex overflow-hidden bghei cardstyle mx-auto"><div class="card-bg-img"><img class="w100 absolute top-0 left-0 right-0 bottom-0 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/12/20201224232157.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/12/20201224232157.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div><div class="relative overflow-hidden card-img-box yqimg"><div class="card-img absolute top-0 left-0 right-0 bottom-0"><img class="h100 w100 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/12/20201224232157.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/12/20201224232157.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div></div><div class="relative my0 mx2 self-center card-info cardmao"><ul class="flex h6 mb1 overflow-hidden info"><li class="info-date"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-LaunchTime"></use></svg><span>2020 年 12 月 24 日</span></li><li class="Post_View"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg><span><a class="article-category-link" href="/categories/hexo/">hexo</a>►<a class="article-category-link" href="/categories/hexo/%E5%93%94%E5%93%94/">哔哔</a></span></li></ul><a href="/posts/61220.html"><div class="h2 mb1 card-title overflow-hidden bold">黑石哔哔支持微信直发图片功能</div><div class="overflow-hidden mb1 h4 card-des">🙄什么是图片直发？发个图就知道了 这个功能咕了2个月了，今天终于写好了，开个贴纪念一下😁。 其实2个月之前，这个功能代码已经写的差不多了，但在测试的时候一直报错，关于腾讯云函数临时空间tmp写入权限的问题。当时用的...</div></a></div></div></section><section class="ajaxcard m1"><div class="mb2 relative flex overflow-hidden bghei cardstyle mx-auto"><div class="card-bg-img"><img class="w100 absolute top-0 left-0 right-0 bottom-0 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/12/20201219000615.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/12/20201219000615.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div><div class="relative overflow-hidden card-img-box yqimg"><div class="card-img absolute top-0 left-0 right-0 bottom-0"><img class="h100 w100 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/12/20201219000615.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/12/20201219000615.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div></div><div class="relative my0 mx2 self-center card-info cardmao"><ul class="flex h6 mb1 overflow-hidden info"><li class="info-date"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-LaunchTime"></use></svg><span>2020 年 12 月 18 日</span></li><li class="Post_View"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg><span><a class="article-category-link" href="/categories/hexo/">hexo</a>►<a class="article-category-link" href="/categories/hexo/%E9%83%A8%E7%BD%B2/">部署</a></span></li></ul><a href="/posts/51315.html"><div class="h2 mb1 card-title overflow-hidden bold">Hexo 部署至云服务器（宝塔面板）</div><div class="overflow-hidden mb1 h4 card-des">🎄简介hexo 博客部署方法有好多种，github pages、gitee pages(pro)、vercel，cloudflare page、阿里云oss、腾讯存储桶等等这些不需要购买服务器的部署方式。一般大部分都用...</div></a></div></div></section><section class="ajaxcard m1"><div class="mb2 relative flex overflow-hidden bghei cardstyle mx-auto"><div class="card-bg-img"><img class="w100 absolute top-0 left-0 right-0 bottom-0 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/10/20201030231049.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/10/20201030231049.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div><div class="relative overflow-hidden card-img-box yqimg"><div class="card-img absolute top-0 left-0 right-0 bottom-0"><img class="h100 w100 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/10/20201030231049.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/10/20201030231049.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div></div><div class="relative my0 mx2 self-center card-info cardmao"><ul class="flex h6 mb1 overflow-hidden info"><li class="info-date"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-LaunchTime"></use></svg><span>2020 年 12 月 04 日</span></li><li class="Post_View"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg><span><a class="article-category-link" href="/categories/typecho/">typecho</a></span></li></ul><a href="/posts/57231.html"><div class="h2 mb1 card-title overflow-hidden bold">Typecho Cuteen4 哔哔页面适配</div><div class="overflow-hidden mb1 h4 card-des">喜大普奔，Cuteen4 于昨天上线了！今天有小伙伴留言说想适配哔哔。开整！ demo: https://typecho.heson10.com/index.php/9.html 准备工作 Leancloud创建存储...</div></a></div></div></section><section class="ajaxcard m1"><div class="mb2 relative flex overflow-hidden bghei cardstyle mx-auto"><div class="card-bg-img"><img class="w100 absolute top-0 left-0 right-0 bottom-0 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/12/20201204132350.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/12/20201204132350.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div><div class="relative overflow-hidden card-img-box yqimg"><div class="card-img absolute top-0 left-0 right-0 bottom-0"><img class="h100 w100 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/12/20201204132350.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/12/20201204132350.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div></div><div class="relative my0 mx2 self-center card-info cardmao"><ul class="flex h6 mb1 overflow-hidden info"><li class="info-date"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-LaunchTime"></use></svg><span>2020 年 12 月 04 日</span></li><li class="Post_View"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg><span><a class="article-category-link" href="/categories/hexo/">hexo</a>►<a class="article-category-link" href="/categories/hexo/%E8%AF%84%E8%AE%BA/">评论</a></span></li></ul><a href="/posts/3217.html"><div class="h2 mb1 card-title overflow-hidden bold">Hexo 博客配置 twikoo 评论系统，并调用最新评论</div><div class="overflow-hidden mb1 h4 card-des">感谢 iMaeGoo 大佬的 Twikoo 。 Twikoo 评论系统是什么？Twikoo是基于腾讯云开发的一个简洁、安全、无后端的静态网站评论系统。具有免费搭建、注重隐私安全、支持邮箱和微信通知、支持反垃圾评论、支持调...</div></a></div></div></section><section class="ajaxcard m1"><div class="mb2 relative flex overflow-hidden bghei cardstyle mx-auto"><div class="card-bg-img"><img class="w100 absolute top-0 left-0 right-0 bottom-0 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/11/20201130170016.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/11/20201130170016.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div><div class="relative overflow-hidden card-img-box yqimg"><div class="card-img absolute top-0 left-0 right-0 bottom-0"><img class="h100 w100 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/11/20201130170016.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/11/20201130170016.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div></div><div class="relative my0 mx2 self-center card-info cardmao"><ul class="flex h6 mb1 overflow-hidden info"><li class="info-date"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-LaunchTime"></use></svg><span>2020 年 11 月 30 日</span></li><li class="Post_View"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg><span><a class="article-category-link" href="/categories/hexo/">hexo</a>►<a class="article-category-link" href="/categories/hexo/%E5%93%94%E5%93%94/">哔哔</a>►<a class="article-category-link" href="/categories/hexo/%E6%8F%92%E4%BB%B6/">插件</a></span></li></ul><a href="/posts/25624.html"><div class="h2 mb1 card-title overflow-hidden bold">Hexo-bb 插件，通过手机微信随时随地发表碎片化思想</div><div class="overflow-hidden mb1 h4 card-des">这些天一直有小伙伴通过私信发我，想把哔哔适配到其他主题。 我想，是时候做个插件了。 Hexo-bb 它来了。 🚩安装npm install hexo-bb --save 🧻准备 Leancloud创建存储空间 微...</div></a></div></div></section><section class="ajaxcard m1"><div class="mb2 relative flex overflow-hidden bghei cardstyle mx-auto"><div class="card-bg-img"><img class="w100 absolute top-0 left-0 right-0 bottom-0 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/11/20201122004400.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/11/20201122004400.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div><div class="relative overflow-hidden card-img-box yqimg"><div class="card-img absolute top-0 left-0 right-0 bottom-0"><img class="h100 w100 lazyload lazyload" data-src="https://picup.heson10.com/img/upyun/2020/11/20201122004400.png" class="lazyload" data-srcset="https://picup.heson10.com/img/upyun/2020/11/20201122004400.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div></div><div class="relative my0 mx2 self-center card-info cardmao"><ul class="flex h6 mb1 overflow-hidden info"><li class="info-date"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-LaunchTime"></use></svg><span>2020 年 11 月 20 日</span></li><li class="Post_View"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg><span><a class="article-category-link" href="/categories/hexo/">hexo</a>►<a class="article-category-link" href="/categories/hexo/%E9%83%A8%E7%BD%B2/">部署</a></span></li></ul><a href="/posts/61031.html"><div class="h2 mb1 card-title overflow-hidden bold">利用Github Action实现hexo博客的自动部署</div><div class="overflow-hidden mb1 h4 card-des">Hexo 博客的Github Action自动化部署是什么？简单说，就是把hexo博客的源代码上传到github代码仓库，github在代码发生变动的时候，自动通过安装一系列nodejs环境和相关依赖，生成html页面到...</div></a></div></div></section><section class="ajaxcard m1"><div class="mb2 relative flex overflow-hidden bghei cardstyle mx-auto"><div class="card-bg-img"><img class="w100 absolute top-0 left-0 right-0 bottom-0 lazyload lazyload" data-src="https://cdn.jsdelivr.net/gh/heson10/pic@master/pic/20201111142917.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/heson10/pic@master/pic/20201111142917.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div><div class="relative overflow-hidden card-img-box yqimg"><div class="card-img absolute top-0 left-0 right-0 bottom-0"><img class="h100 w100 lazyload lazyload" data-src="https://cdn.jsdelivr.net/gh/heson10/pic@master/pic/20201111142917.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/heson10/pic@master/pic/20201111142917.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></div></div><div class="relative my0 mx2 self-center card-info cardmao"><ul class="flex h6 mb1 overflow-hidden info"><li class="info-date"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-LaunchTime"></use></svg><span>2020 年 11 月 11 日</span></li><li class="Post_View"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg><span><a class="article-category-link" href="/categories/hexo/">hexo</a>►<a class="article-category-link" href="/categories/hexo/%E4%B8%BB%E9%A2%98/">主题</a></span></li></ul><a href="/posts/64095.html"><div class="h2 mb1 card-title overflow-hidden bold">一款清新萌系轻量的HEXO主题SweetCloud蜜云微主题</div><div class="overflow-hidden mb1 h4 card-des">各位光棍节快乐！ 踩着光棍节这个点，今天发一个虐狗hexo主题: Sweet-Cloud ，中文名：蜜云。 💕Sweet-Cloud 蜜云微主题一款hexo情侣微主题。后端为Leancloud。 为方便你的另一半...</div></a></div></div></section></section><ol class="page-navigator clicknext"><li class="next xiayiye"><a href="/page/2/">下一页</a></li></ol></div></div></div><div id="RightDownBtn" class="fixed p1 yj shadow z4 flex flex-column flex-end"><a id="btn" href="javascript:void(0)" target="_self"><svg style="width:1.5em;height:1.5em" class="icon" aria-hidden="true"><use xlink:href="#icon-xuanfufanhuidingbu"></use></svg></a><div class="formobilenav d-d"><a href="javascript:void(0)" onclick="CuteenFunc.SwitchDarkMode()"><svg style="width:1.5em;height:1.5em" class="icon" aria-hidden="true"><use id="modeicon2" xlink:href="#icon-_moon"></use></svg></a></div></div></div><div id="searchbox"><div class="flex mx2 mb1 mt2"><div class="col-12" action=""><input autocomplete="off" id="local-search-input" class="input mr1 form-control" name="q" results="0" type="text" placeholder="请输入搜索关键词……" required><div id="local-search-result"></div></div></div><div class="px3 pb3 pt1"><div class="bold h3 mb1"><i class="fas fa-cloud"></i> 标签云</div><ul class="tag-list" itemprop="keywords"><li class="searchbox_tags"><a class="tag-list-link" href="/tags/hexo/" rel="tag">HEXO</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E5%93%94%E5%93%94/" rel="tag">哔哔</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E4%B8%BB%E9%A2%98/" rel="tag">主题</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E6%90%AD%E5%BB%BA/" rel="tag">搭建</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E8%AF%B4%E8%AF%B4/" rel="tag">说说</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/next/" rel="tag">NEXT</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E9%83%A8%E7%BD%B2/" rel="tag">部署</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E7%BE%8E%E5%8C%96/" rel="tag">美化</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E5%AD%97%E4%BD%93/" rel="tag">字体</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E8%AF%84%E8%AE%BA/" rel="tag">评论</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E5%BE%AE%E4%BF%A1/" rel="tag">微信</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/CDN/" rel="tag">CDN</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E5%9B%BE%E7%89%87/" rel="tag">图片</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E7%BA%AA%E5%BF%B5/" rel="tag">纪念</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/SEO/" rel="tag">SEO</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/%E4%BC%98%E5%8C%96/" rel="tag">优化</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/cuteen/" rel="tag">CUTEEN</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/typecho/" rel="tag">TYPECHO</a></li><li class="searchbox_tags"><a class="tag-list-link" href="/tags/algolia/" rel="tag">ALGOLIA</a></li></ul></div></div><footer id="footer" class="mx-auto w100 p3 mt3"><div class="Footer_content center"><p class="h5">&copy; 2020 - 2021<a target="_blank" rel="noopener" href="http://hm46334.hanming.fun/">我的小窝</a></p><p class="h5"><a href="https://hexo.io/zh-cn/" rel="external nofollow" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://blog.zwying.com/archives/39.html" rel="external nofollow" target="_blank">Cuteen</a> | 由 <a href="http://hm46334.hanming.fun/" title="由 故里 移植到 Hexo" target="_blank">故里</a> 移植</p><p class="h5"><span id="lc-sv"><i class="fas fa-eye"></i> &nbsp;<span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">&nbsp;&nbsp;<i class="fas fa-user"></i> &nbsp;<span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&nbsp;|&nbsp;</span><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span></p><p class="h5"><svg style="width:1.5em;height:1.5em;vertical-align:middle" class="icon" aria-hidden="true"><use xlink:href="#icon-ICP"></use></svg> <a style="vertical-align:middle" href="https://beian.miit.gov.cn" target="_blank" rel="external nofollow">赣ICP备20008960号 </a><a href="https://www.upyun.com/" rel="external nofollow" target="_blank"><img style="vertical-align:middle" src="https://pic.heson10.com/wallpapers/yun_logo6.png" class="lazyload" data-srcset="https://pic.heson10.com/wallpapers/yun_logo6.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></a></p></div></footer><div id="post-menu" class="fixed top-0 bottom-0 h100 z1 table shadow"><div id="MENU"></div></div><script src="https://cdn.jsdelivr.net/gh/zwying0814/Cuteen@v3.1.200810/Static/Js/code-and-copy.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.min.css" rel="stylesheet"><script async src="https://cdn.jsdelivr.net/gh/zwying0814/Cuteen@v3.1.200810/Static/Js/Smooth.js"></script><script src="https://cdn.jsdelivr.net/gh/zwying0814/Cuteen@v3.1.200810/Static/Js/circleMagic.min.js"></script><script async src="https://cdn.jsdelivr.net/gh/zwying0814/Cuteen@v3.1.200810/Static/Js/Player.js"></script><script src="https://cdn.jsdelivr.net/gh/zwying0814/Cuteen@v3.1.200810/Static/Js/sidebar-follow-jquery.js"></script><script src="https://cdn.jsdelivr.net/npm/twikoo@1.2.0/dist/twikoo.all.min.js"></script><script src="js/Main.js"></script><script src="https://cdn.jsdelivr.net/gh/heson10/pic@master/js/issues.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script><script>$(document).pjax('a:not(a[target="_blank"], a[no-pjax])',{container:"#pjax",fragment:"#pjax",timeout:8e3}).on("pjax:send",function(){before_pjax()}).on("pjax:complete",function(){after_pjax(),addAlt(),LCCounter.refreshCounter(),colortag(),newcomment(),"undefined"==typeof IssuesAPI&&loadIssuesJS(),_hmt.push(["_trackPageview",document.location.pathname])}).on("pjax:end",function(){end_pjax(),pjax_twikoo(),IssuesAPI.request(),dingwei(),pjax_fancybox()})</script><script defer>const LCCounter = {
-    app_id: 'C1qWqsDatomXVctTafBuJADI-gzGzoHsz',
-    app_key: 'J4CujIoElz1Wo7yLUbY4SOO5',
-    custom_api_server: 'https://valineapi.heson10.com',
+<script src="/js/all.js"></script>
 
-    // 查询存储的记录
-    getRecord(Counter, url, title) {
-      return new Promise(function (resolve, reject) {
-        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
-          .then(resp => resp.json())
-          .then(({results, code, error}) => {
-            if (code === 401) {
-              throw error;
-            }
-            if (results && results.length > 0) {
-              var record = results[0];
-              resolve(record);
-            } else {
-              Counter('post', '/classes/Counter', {url, title: title, times: 0})
-                .then(resp => resp.json())
-                .then((record, error) => {
-                  if (error) {
-                    throw error;
-                  }
-                  resolve(record);
-                }).catch(error => {
-                console.error('Failed to create', error);
-                reject(error);
-              });
-            }
-          }).catch((error) => {
-          console.error('LeanCloud Counter Error:', error);
-          reject(error);
+    <script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.5.3/dist/av-min.js"></script>
+    <script>
+
+        var {
+            Query
+        } = AV;
+        AV.init({
+            appId: "0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz",
+            appKey: "HwCiWuxfpvKiLm4teCUgTIba",
+            serverURLs: 'https://bbapi.heson10.com'
         });
-      })
-    },
 
-    // 发起自增请求
-    increment(Counter, incrArr) {
-      return new Promise(function (resolve, reject) {
-        Counter('post', '/batch', {
-          "requests": incrArr
-        }).then((res) => {
-          res = res.json();
-          if (res.error) {
-            throw res.error;
-          }
-          resolve(res);
-        }).catch((error) => {
-          console.error('Failed to save visitor count', error);
-          reject(error);
-        });
-      });
-    },
+        var query = new AV.Query('content');
 
-    // 构建自增请求体
-    buildIncrement(objectId) {
-      return {
-        "method": "PUT",
-        "path": `/1.1/classes/Counter/${ objectId }`,
-        "body": {
-          "times": {
-            '__op': 'Increment',
-            'amount': 1
-          }
-        }
-      }
-    },
 
-    // 校验是否为有效的 UV
-    validUV() {
-      var key = 'LeanCloudUVTimestamp';
-      var flag = localStorage.getItem(key);
-      if (flag) {
-        // 距离标记小于 24 小时则不计为 UV
-        if (new Date().getTime() - parseInt(flag) <= 86400000) {
-          return false;
-        }
-      }
-      localStorage.setItem(key, new Date().getTime().toString());
-      return true;
-    },
 
-    addCount(Counter) {
-      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
-      enableIncr = true;
-      var getterArr = [];
-      var incrArr = [];
-      // 请求 PV 并自增
-      var pvCtn = document.querySelector('#lc-sv');
-      if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'https://www.heson10.com' + '/#lc-sv', 'Visits').then((record) => {
-          incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-sv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + 1;
-              if (pvCtn) {
-                pvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(pvGetter);
-      }
 
-      // 请求 UV 并自增
-      var uvCtn = document.querySelector('#lc-uv');
-      if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'https://www.heson10.com' + '/#lc-uv', 'Visitors').then((record) => {
-          var vuv = this.validUV();
-          vuv && incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-uv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + (vuv ? 1 : 0);
-              if (uvCtn) {
-                uvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(uvGetter);
-      }
+        var app = new Vue({
+            el: '#app',
+            data: {
+                page: 0,
+                count: 0,
+                contents: []
+            },
+            methods: {
+                loadMore1: function (event) {
 
-      // 请求文章的浏览数，如果是当前页面就自增
-      var allPV = document.querySelectorAll('#lc-pv');
-      if (allPV.length > 0 || enableIncr) {
-        for (i = 0; i < allPV.length; i++) {
-          let pv = allPV[i];
-          let title = pv.getAttribute('data-title');
-          var url = 'https://www.heson10.com' + pv.getAttribute('data-path');
-          if (url) {
-            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
-              // 是当前页面就自增
-              if (pv.getAttribute('data-path') == window.location.pathname) {
-                incrArr.push(this.buildIncrement(record.objectId));
-              }
-              if (pv) {
-                var ele = pv.querySelector('#lc-pv #number');
-                if (ele) {
-                  if (pv.getAttribute('data-path') == window.location.pathname) {
-                    ele.innerText = (record.times || 0) + 1;
-                  } else {
-                    ele.innerText = record.times || 0;
-                  }
-                  pv.style.display = 'inline';
+                    var {
+                        Query
+                    } = AV;
+                    AV.init({
+                        appId: "0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz",
+                        appKey: "HwCiWuxfpvKiLm4teCUgTIba",
+                        serverURLs: 'https://bbapi.heson10.com'
+                    });
+
+                    var query = new AV.Query('content');
+                    getData1(++this.page);
                 }
-              }
-            });
-            getterArr.push(viewGetter);
-          }
-        }
-      }
-
-      // 如果启动计数自增，批量发起自增请求
-      if (enableIncr) {
-        Promise.all(getterArr).then(() => {
-          incrArr.length > 0 && this.increment(Counter, incrArr);
+            }
         })
-      }
 
-    },
+        var app2 = new Vue({
+            el: '#app2',
+            data: {
+                page: 0,
+                count: 0,
+                contents: []
+            },
+            methods: {
+                loadMore2: function (event) {
+                    var {
+                        Query
+                    } = AV;
+                    AV.init({
+                        appId: "3ESXk94AEyyC1UiW314gQQz1-gzGzoHsz",
+                        appKey: "x76rfLe86pJxt2Tlzs3a67q6",
+                        serverURLs: 'https://xfbb.heson10.com'
+                    });
+
+                    var query2 = new AV.Query('content');
 
 
-    fetchData(api_server) {
-      var Counter = (method, url, data) => {
-        return fetch(`${ api_server }/1.1${ url }`, {
-          method,
-          headers: {
-            'X-LC-Id': this.app_id,
-            'X-LC-Key': this.app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
+
+
+
+
+                    getData2(++this.page);
+                }
+            }
+        })
+        query.count().then(function (count) {
+            app.count = count;
+        }, function (error) { });
+
+        getData1(0);
+
+        var {
+            Query
+        } = AV;
+        AV.init({
+            appId: "3ESXk94AEyyC1UiW314gQQz1-gzGzoHsz",
+            appKey: "x76rfLe86pJxt2Tlzs3a67q6",
+            serverURLs: 'https://xfbb.heson10.com'
         });
-      };
-      this.addCount(Counter);
-    },
-
-    refreshCounter() {
-      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
-      if (api_server) {
-        this.fetchData(api_server);
-      } else {
-        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
-          .then(resp => resp.json())
-          .then(({api_server}) => {
-            this.fetchData('https://' + api_server);
-          });
-      }
-    }
-
-  };
-
-  LCCounter.refreshCounter();</script></body></html>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/12/index/" data-id="cks8ncsac000jnst02t7v466u" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2021/08/12/css/Main/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
-    </a>
-  
-</nav>
-
-  
-</article>
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+        var query2 = new AV.Query('content');
 
-  
-    
+        query2.count().then(function (count) {
+            app2.count = count;
+        }, function (error) { });
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li></ul>
-    </div>
-  </div>
+        getData2(0);
+
+        function urlToLink(str) {
+            // var re = /(http|ftp|https):\/\/[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*[\w-\@?^=%&/~+#])?/g; 
+            var re = /\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;
+            var re_forpic = /\bhttps?:\/\/.*?(\.gif|\.jpeg|\.png|\.jpg|\.bmp|\.webp)/g;
+            var re_forpic_vx = /^http:\/\/mmbiz\.qpic\.cn[^\s]*/g;
+            str = str.replace(re, function (website) {
+                return "<a href='" + website + "' target='_blank'> <i class='iconfont icon-lianjie-copy'></i>链接 </a>";
+            });
+            str = str.replace(re_forpic, function (imgurl) {
+                return "<img src='" + imgurl + "'  /> ";
+            });
+            str = str.replace(re_forpic_vx, function (imgurl) {
+                return "<img src='" + imgurl + "'  /> ";
+            });
+            return str;
+        };
+
+        //男生获取哔哔
+        function getData1(page = 0) {
+            query.descending('createdAt').skip(page * 10).limit(10).find().then(function (results) {
+                if (results.length == 0) {
+                    alert('之前没发表过说说了')
+                } else {
+                    let resC = results;
+                    reqData = false;
+                    resC.forEach((i) => {
+                        let d = new Date(i.createdAt);
+                        datetime = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+                        i.attributes.time = datetime;//☆友好地显示时间改为 i.attributes.time = timeago(d);
+                        i.attributes.content = urlToLink(i.attributes.content);
+                        app.contents.push(i);
+                    })
+                }
+
+            }, function (error) { });
+        }
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/08/12/index/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/css/Main/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/bb/js/vue.min/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/bb/js/twikoo.all.min/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/12/bb/js/Smooth/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+        //女生获取哔哔
+        function getData2(page = 0) {
+            query2.descending('createdAt').skip(page * 10).limit(10).find().then(function (results) {
+                if (results.length == 0) {
+                    alert('之前没发表过哔哔了')
+                } else {
+                    let resC = results;
+                    reqData = false;
+                    resC.forEach((i) => {
+                        let d = new Date(i.createdAt);
+                        datetime = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+                        i.attributes.time = datetime; //☆友好地显示时间改为 i.attributes.time = timeago(d);
+                        i.attributes.content = urlToLink(i.attributes.content);
+                        app2.contents.push(i);
+                    })
+                }
 
-  
-</aside>
-        
+            }, function (error) { });
+        }
+
+        //友好地显示时间,按需修改上面标记☆的代码
+        function timeago(dateTimeStamp) {
+
+            var minute = 1000 * 60;
+            var hour = minute * 60;
+            var day = hour * 24;
+            var halfamonth = day * 15;
+            var month = day * 30;
+
+            var now = new Date().getTime();
+            var diffValue = now - dateTimeStamp;
+
+            if (diffValue < 0) {
+                //非法操作
+                //alert("结束日期不能小于开始日期！");
+            }
+
+            var monthC = diffValue / month;
+            var weekC = diffValue / (7 * day);
+            var dayC = diffValue / day;
+            var dayR = diffValue / hour % 24;
+            var hourC = diffValue / hour;
+            var hourR = diffValue / minute % 60;
+            var minC = diffValue / minute;
+            var minR = diffValue / 1000 % 60;
+            if (monthC >= 1) {
+                result = getLocalTime(dateTimeStamp / 1000);
+            } else if (weekC >= 1) {
+                result = parseInt(weekC) + "周前";
+            } else if (dayC >= 1) {
+                result = parseInt(dayC) + "天" + parseInt(dayR) + "小时前";
+            } else if (hourC >= 1) {
+                result = parseInt(hourC) + "小时" + parseInt(hourR) + "分钟前";
+            } else if (minC >= 1) {
+                result = parseInt(minC) + "分钟" + parseInt(minR) + "秒前";
+            } else result = "刚刚发表";
+            return result;
+        }
+
+        function getLocalTime(nS) {
+            return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
+        }
+
+    </script>
+
+
+
+</div>
+        </div>
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
   </div>
 </body>
 </html>
